@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>practice</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="logo">Pixel<span>Forge</span></div>
+  <div class="header-right">
+    <div class="search-bar">
+      <input type="text" placeholder="🔍 Поиск...">
+      <button>Найти</button>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="#hero" class="nav-link">Главная</a>
+  <a href="#services" class="nav-link">Услуги</a>
+  <a href="#about" class="nav-link">О студии</a>
+  <a href="#testimonial" class="nav-link">Отзывы</a>
+  <a href="#footer" class="nav-link">Контакты</a>
+</nav>
+
+<!-- HERO / SLIDER -->
+<section id="hero">
+  <input type="radio" name="slider" id="s1" checked class="slide-radio">
+  <input type="radio" name="slider" id="s2" class="slide-radio">
+  <input type="radio" name="slider" id="s3" class="slide-radio">
+
+  <div class="slider-wrapper">
+    <div class="slide slide-1">
+      <div class="hero-text">
+        <h1>Создаём<br>цифровой<br>продукт</h1>
+        <p>Разрабатываем сайты, брендинг и мобильные приложения. Более 200 проектов с 2015 года.</p>
+        <!-- UPDATED BUTTON STRUCTURE -->
+        <a href="#about" class="btn-primary">
+          Запросить
+        </a>
+      </div>
+      <div class="hero-visual">
+        <img src="images/слайдер1.avif" alt="Пример проекта" class="hero-image">
+      </div>
+    </div>
+
+    <div class="slide slide-2">
+      <div class="hero-text">
+        <h1>Веб-дизайн<br>который<br>продаёт</h1>
+        <p>Прототип за 3 дня, финальный дизайн за 10. Проверено на 80+ e-commerce проектах.</p>
+        <a href="#services" class="btn-primary">
+          Запросить
+        </a>
+      </div>
+      <div class="hero-visual">
+        <img src="images/слайдер2.avif" alt="Пример проекта" class="hero-image">
+      </div>
+    </div>
+
+    <div class="slide slide-3">
+      <div class="hero-text">
+        <h1>Брендинг<br>с нуля<br>за 21 день</h1>
+        <p>Логотип, гайдлайн, шаблоны и мерч. Всё в одном проекте. Сдаём в срок.</p>
+        <a href="#about" class="btn-primary">
+          Запросить
+        </a>
+      </div>
+      <div class="hero-visual">
+        <img src="images/слайдер3.avif" alt="Пример проекта" class="hero-image">
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-dots">
+    <label for="s1" class="dot"></label>
+    <label for="s2" class="dot"></label>
+    <label for="s3" class="dot"></label>
+  </div>
+  
+  <!-- NEW WAVE ELEMENT -->
+  <div class="hero-wave"></div>
+    <div class="hero-wave">
+    <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 50 C 360 100, 1080 0, 1440 50 L 1440 100 L 0 100 Z" fill="var(--off-white)"/>
+    </svg>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="service-card">
+    <div class="service-icon">
+  <img src="images/иконка1.avif" alt="Веб-дизайн">
+    </div>
+    <div class="service-text">
+      <h3>Веб-дизайн</h3>
+      <p>Проектируем интерфейсы, которые работают на конверсию. Прототип за 3 дня, финальный дизайн за 10.</p>
+      <a href="#about" class="service-link">› Подробнее</a>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-icon">
+  <img src="images/иконка2.avif" alt="Веб-дизайн">
+    </div>
+    <div class="service-text">
+      <h3>Брендинг</h3>
+      <p>Логотип, фирменный стиль, гайдлайн. Создаём визуальный язык, который узнают с первого взгляда.</p>
+      <a href="#about" class="service-link">› Подробнее</a>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-icon">
+  <img src="images/иконка3.avif" alt="Веб-дизайн">
+    </div>
+    <div class="service-text">
+      <h3>Разработка</h3>
+      <p>Фронтенд, бэкенд, мобильные приложения. Чистый код, документация, поддержка после запуска.</p>
+      <a href="#about" class="service-link">› Подробнее</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / VIDEO -->
+<section id="about">
+  <div class="about-video">
+    <video 
+      controls 
+      autoplay 
+      muted 
+      loop
+      poster="images/video-poster.jpg"
+      style="width: 100%; height: 100%; min-height: 340px; border-radius: 8px; object-fit: cover;">
+      <source src="images/видео.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+  <div class="about-content">
+    <h2>Что входит<br>в работу?</h2>
+    <div class="feature-list">
+      <div class="feature-item"><span class="feature-dot"></span><a href="#services">Анализ аудитории и конкурентов</a></div>
+      <div class="feature-item"><span class="feature-dot"></span><a href="#about">UX-прототипирование в Figma</a></div>
+      <div class="feature-item"><span class="feature-dot"></span><a href="#services">Адаптивная вёрстка HTML/CSS/JS</a></div>
+      <div class="feature-item"><span class="feature-dot"></span><a href="#about">Кроссбраузерное тестирование</a></div>
+      <div class="feature-item"><span class="feature-dot"></span><a href="#services">SEO-оптимизация с первого дня</a></div>
+      <div class="feature-item"><span class="feature-dot"></span><a href="#footer">Поддержка и доработки 3 месяца бесплатно</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section id="testimonial">
+  <h2>Адаптивный дизайн. Чистый код. Быстрый результат.</h2>
+  <div class="testimonial-text">
+    Pixel Forge сдали проект на 5 дней раньше срока. Мы получили сайт, который продаёт. Конверсия выросла вдвое за первый месяц. Рекомендую всем, кто ценит результат.
+  </div>
+  <div class="testimonial-author">Джони Джонсан, <span>CEO / TechRetail</span></div>
+</section>
+
+<!-- SOCIAL BAR -->
+<div class="social-bar">
+  <div class="social-bar-label">Следите за нами</div>
+  <div class="social-links">
+    <a href="#" class="social-link"><span class="social-icon">f</span> Facebook</a>
+    <a href="#" class="social-link"><span class="social-icon">t</span> Telegram</a>
+    <a href="#" class="social-link"><span class="social-icon">in</span> Instagram</a>
+    <a href="#" class="social-link"><span class="social-icon">yt</span> YouTube</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Услуги</h4>
+      <ul>
+        <li><a href="#services">Веб-дизайн</a></li>
+        <li><a href="#services">Брендинг</a></li>
+        <li><a href="#services">SEO-оптимизация</a></li>
+        <li><a href="#services">Мобильные приложения</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Проекты</h4>
+      <ul>
+        <li><a href="#">E-commerce</a></li>
+        <li><a href="#">Мобильные приложения</a></li>
+        <li><a href="#">Корпоративные сайты</a></li>
+        <li><a href="#">Лендинги</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Решения</h4>
+      <ul>
+        <li><a href="#">Для стартапов</a></li>
+        <li><a href="#">Для малого бизнеса</a></li>
+        <li><a href="#">Для корпораций</a></li>
+        <li><a href="#">Под ключ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Партнёры</h4>
+      <ul>
+        <li><a href="#">Агентство Alfa</a></li>
+        <li><a href="#">Studio Beta</a></li>
+        <li><a href="#">TechLab Group</a></li>
+        <li><a href="#">Creative Hub</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <nav class="footer-nav">
+      <a href="#hero">Главная</a> <span class="footer-sep">|</span>
+      <a href="#services">Услуги</a> <span class="footer-sep">|</span>
+      <a href="#about">Проекты</a> <span class="footer-sep">|</span>
+      <a href="#testimonial">Блог</a> <span class="footer-sep">|</span>
+      <a href="#footer">Контакты</a>
+    </nav>
+    <div class="footer-copy">
+      © 2026 PixelForge Studio  |  Дизайн <a href="#">pixelforge.ru</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
